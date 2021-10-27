@@ -1,0 +1,69 @@
+@import url(http://fonts.googleapis.com/css?family=Exo:100,200,400);
+@import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro:700,400,300);
+
+body {
+	margin:				0;
+	padding:			0;
+	background:			#FFFFFF;
+	color:				#FFFFFF;
+	font-family:		'Exo', sans-serif;
+	font-size:			10px;
+}
+.body {
+	position:			fixed;
+	top:				0px;
+	left:				0px;
+	right:				0px;
+	bottom:				0px;
+	width:				100%;
+	height:				100%;
+	background-image:	url(../images/background.jpg);
+	background-size:	cover;
+	-webkit-filter:		blur(5px);
+	z-index:			0;
+}
+.login {
+	position:			absolute;
+	top:				25px;
+	left:				25px;
+	width:				100%;
+	height:				100%;
+	padding:			10px;
+	z-index:			2;
+}
+div.container {
+    width:				100%;
+    border:				0;
+}
+.content-wrapper {
+	display:			table;
+}
+.content {
+	display:			table-row;
+}
+.content>div {
+	display:			table-cell;
+    padding:			3px;
+}
+table {
+	word-wrap:			break-word;
+}
+thead {
+	display:			table-header-group;
+	text-decoration:	underline;
+	font-weight:		bold;
+}
+input[type=submit] {
+	width:				360px;
+	height:				35px;
+	background:			#FFFFFF;
+	border:				1px solid #FFFFFF;
+	cursor:				pointer;
+	border-radius:		2px;
+	color:				#1A1A1A;
+	font-family:		'Exo', sans-serif;
+	font-size:			14px;
+	font-weight:		400;
+	padding:			6px;
+	margin-top:			10px;
+}
