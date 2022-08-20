@@ -9,12 +9,19 @@ Metrics included :
 1. External Indicators
 
 POPL -> Popularity – Number of stars in github
+
 AGE -> Reverse days to the latest release
+
 OPEN_ISSUES -> Open issues (bugs)
+
 CLOSED_ISSUES -> Closed/resolved issues (bugs)
+
 DEVLP -> Developers/contributors in the project
+
 PART -> Commits for every release.
+
 DOC -> Comments per commit.
+
 UPD -> Frequency of updates (in days between releases)
 
 2. Source Code Size & Complexity Metrics
