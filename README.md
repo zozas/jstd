@@ -6,16 +6,19 @@ The dataset of the manuscript "Forecasting Technical Debt in JavaScript Applicat
 
 Metrics included :
 
-External Indicators
-    POPL          Popularity – Number of stars in github
-    AGE           Reverse days to the latest release.
-    OPEN_ISSUES	  Open issues (bugs)
-	  CLOSED_ISSUES	Closed/resolved issues (bugs)
-    DEVLP         Developers/contributors
-    PART	        Commits for every release.
-  	DOC	          Comments per commit.
-	  UPD	          Frequency of updates
-Source Code Size & Complexity Metrics
+1. External Indicators
+
+POPL -> Popularity – Number of stars in github
+AGE -> Reverse days to the latest release
+OPEN_ISSUES -> Open issues (bugs)
+CLOSED_ISSUES -> Closed/resolved issues (bugs)
+DEVLP -> Developers/contributors in the project
+PART -> Commits for every release.
+DOC -> Comments per commit.
+UPD -> Frequency of updates (in days between releases)
+
+2. Source Code Size & Complexity Metrics
+
 	SLOC	Physical source code lines
 	LCOM	Lines of comments.
 	LOC	Total lines of code = SLOC + LCOM.
