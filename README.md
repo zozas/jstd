@@ -2,89 +2,89 @@
 JavaScript Techical Debt estimator
 https://jstd.ece.uowm.gr/
 
-The dataset of the manuscript "Forecasting Technical Debt in JavaScript Applications" by Ioannis Zozas, Stamatia Bibi, Apostolos Ampatzoglou is in the ZIP file
+The dataset of the manuscript "Forecasting Technical Debt in JavaScript Applications" by Ioannis Zozas, Stamatia Bibi, Apostolos Ampatzoglou is in the ZIP file.
 
-Metrics included :
+Metrics included in the study :
 
 1. External Indicators
 
-POPL -> Popularity – Number of stars in github
+1.1 POPL referring to Popularity. Calculated as the number of stars in github.
 
-AGE -> Reverse days to the latest release
+1.2 AGE referring to the Age of the project, calculated as the reverse days to the latest release.
 
-OPEN_ISSUES -> Open issues (bugs)
+1.3 OPEN_ISSUES referring to the open issues (bugs) as reported by the github platform.
 
-CLOSED_ISSUES -> Closed/resolved issues (bugs)
+1.4 CLOSED_ISSUES referring to the Closed/resolved issues (bugs) as reported by the github platform.
 
-DEVLP -> Developers/contributors in the project
+1.5 DEVLP referring to the number of Developers/contributors in the project.
 
-PART -> Commits for every release.
+1.6 PART referring to the participation, calculated as the number of commits for every release.
 
-DOC -> Comments per commit.
+1.7 DOC referring to the documentation, calculated as the number of comments per commit.
 
-UPD -> Frequency of updates (in days between releases)
+1.8 UPD referring to the update level, calculated as the frequency of updates (measured in days between releases).
 
 2. Source Code Size & Complexity Metrics
 
-SLOC -> Physical source code lines
+2.1 SLOC referring to the physical source code lines.
 
-LCOM -> Lines of comments.
+2.2 LCOM referring to the lines of comments (not to be mistaken with the CK suite LCOM metric!).
 
-LOC -> Total lines of code = SLOC + LCOM.
+2.3 LOC referring to the total lines of code, calculated as the sum of SLOC and LCOM.
 
-NOA -> The number of attributes.
+2.4 NOA referring to the number of attributes (calculated based on the cr tool code).
 	
-NOC -> The number of classes.
+2.5 NOC referring to the total number of classes (as described in the JavaScript latest specification).
 	
-NOM -> The number of methods.
+2.6 NOM referring  to the number of methods.
 	
-FILES -> The number of files.
+2.7 FILES referring to the total number of files.
 	
-DIRS -> The number of directories.
+2.8 DIRS referring to the total number of directories.
 	
-SIZE -> Release size in bytes.
+2.9 SIZE referring to the release's size in bytes.
 	
-PARM -> Number of function parameters (used part of cr tool code).
+2.10 PARM referring to the number of function parameters (used part of cr tool code).
 
-DIT -> Depth of inheritance tree (used part of cr tool code).
+2.11 DIT referring to the depth of inheritance tree (used part of cr tool code).
 
-MEM -> Memory heap (as calculated by firefox using about:memory).
+2.12 MEM referring to the memory heap allocated at run time (as calculated by firefox using about:memory).
 
-CC -> Cyclomatic complexity (used part of cr tool code).
+2.13 CC referring to Cyclomatic complexity (used part of cr tool code).
 
-CCDEN -> Cyclomatic complexity density (used part of cr tool code).
+2.14 CCDEN referring to Cyclomatic complexity density (used part of cr tool code).
 
-HEFF -> Halstead effort (used part of cr and lizard tool code).
+2.15 HEFF referring to Halstead effort (used part of cr and lizard tool code).
 
-HPV -> Halstead program volume (used part of cr and lizard tool code).
+2.16 HPV referring to Halstead program volume (used part of cr and lizard tool code).
 
-HPL -> Halstead program level difficulty (we should note that tokens are also counted but not used as a mteric, rather than used for calculating Halsted metrics)
+2.17 HPL referring to Halstead program level difficulty (we should note that tokens are also counted but not used as a mteric, rather than used for calculating Halsted metrics)
 
-CLONE -> Duplicate (cloned) lines (based on jscpd source code).
+2.18 CLONE referring to duplicate (cloned) lines (based on jscpd source code).
 
-COVRG -> Source code coverage percent (based on jest source code)
+2.19 COVRG referring to source code coverage percent (based on jest source code)
 
-Maintainability metrics
+3. Maintainability metrics
 
-OBFS -> Number of obfuscation incidents.
+3.1 OBFS referring to the number of obfuscation incidents in the source code (easily detected due to the encoding characters / and #).
 
-CSMELL -> Total count of code smell issues.
+3.2 CSMELL referring to the total count of code smell issues (based on the SonarQube deifinitions).
 
-VULN -> Total count of vulnerability issues.
+3.3 VULN referring to the total count of vulnerability issues (based on the SonarQube definitions).
 	
-JS metrics
+4. JavaScript metrics
 
-WITH -> WITH keyword statements.
+4.1 WITH referring to the total number of WITH keyword statements detected.
 
-EVAL -> EVAL keyword statements.
+4.2 EVAL referring to the total number of EVAL keyword statements detected.
 	
-VECMA -> Version of ECMAScript applied. Initially based on the source code of EScheck tool, to detect the latest features of the latest version and then, backwards, detect features assign to each version up to the first.
+4.3 VECMA referring to the version of ECMAScript applied. Initially based on the source code of EScheck tool, to detect the latest features of the latest version and then, backwards, detect features assign to each version up to the first.
 
-NEW -> NEW keyword statements.
+4.4 NEW referring to the total number of NEW keyword statements detected.
 	
-ANONYM -> Number of Anonymous functions. All anonymous functions are detected based in function definition (using () in the code line) when assigning a value.
+4.5 ANONYM referring to the total number of Anonymous functions detected. All anonymous functions are detected based in function definition (using () in the code line) when assigning a value.
 
-ARROW -> Number of Arrow functions. Arrow functions are dected based on the special key combination (=>) in JavaScript
+4.6 ARROW referring to the total number of Arrow functions detected. Arrow functions are dected based on the special key combination (=>) in JavaScript
 
-TD -> Technical debt principal calculated based on the benchmark of Amanatidis et al. (Amanatidis, T., et al., (2020). Evaluating the agreement among technical debt measurement tools: building an empirical bench-mark of technical debt liabilities. Empir Software Eng 25, 4161–4204.)
+4.7 TD referring to Technical debt principal calculated based on the benchmark of Amanatidis et al. (Amanatidis, T., et al., (2020). Evaluating the agreement among technical debt measurement tools: building an empirical bench-mark of technical debt liabilities. Empir Software Eng 25, 4161–4204.)
 
